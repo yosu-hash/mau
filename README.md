@@ -1,2 +1,119 @@
-# mau
-please
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Terbuka untuk Bunda</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffe6eb;
+            text-align: center;
+            padding: 20px 15px;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 25px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: inline-block;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 24px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.4;
+            margin: 10px 0;
+        }
+        .product-img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px 0;
+        }
+        .item-box {
+            background-color: #fff0f3;
+            border: 2px dashed #ff4d6d;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-weight: bold;
+            font-size: 16px;
+            color: #ff4d6d;
+        }
+        .btn-container {
+            margin-top: 20px;
+            height: 110px;
+            position: relative;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.1s ease;
+            width: 80%;
+            max-width: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+        #yesBtn {
+            background-color: #28a745;
+            color: white;
+        }
+        #noBtn {
+            background-color: #dc3545;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Halo Bundaa Sayang! 💕</h1>
+    <p>Anakmu yang rajin membantu orang tua ini punya satu permintaan kecil... 🥺👉👈</p>
+    
+    <!-- FOTO UTAMA CELANA JEANS PUTIH -->
+    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98q-lopspdvf3qek62.webp" alt="Celana Jeans Putih" class="product-img">
+
+    <div class="item-box">
+        👖 Celana Jeans Putih Korean Style
+    </div>
+
+    <p>Bunda mau gak beliin celana keren ini buat aku?</p>
+
+    <div class="btn-container">
+        <button id="yesBtn" onclick="beliin()">Mau Beliin! 🥰</button>
+        <button id="noBtn" ontouchstart="hindari()" onmouseover="hindari()" onclick="hindari()">Enggak Dulu 😜</button>
+    </div>
+</div>
+
+<script>
+    function beliin() {
+        // Efek langsung berpindah (redirect) ke Shopee tanpa delay waktu
+        window.location.href = "https://id.shp.ee/qSVSiF6o";
+    }
+
+    function hindari() {
+        const noBtn = document.getElementById('noBtn');
+        // Fitur tombol menghindar acak di HP
+        const x = Math.random() * 100 - 50; 
+        const y = Math.random() * 80 - 40;
+        noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    }
+</script>
+
+</body>
+</html>
